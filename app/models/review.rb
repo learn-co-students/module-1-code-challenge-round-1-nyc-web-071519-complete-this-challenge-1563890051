@@ -25,7 +25,7 @@ class Review
     end
 
     def rating
-        self.rating
+        # Restaurant.all.select{|i| i.}
     end
 
     def content
