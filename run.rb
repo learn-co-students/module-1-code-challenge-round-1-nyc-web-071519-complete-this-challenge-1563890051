@@ -1,7 +1,7 @@
 require 'bundler/setup'
 require "pry"
 Bundler.require
-require_rel '../app'
+require_rel './app'
 
 cust1 = Customer.new("Matt", "Listor")
 cust2 = Customer.new("Matt", "Smith")
