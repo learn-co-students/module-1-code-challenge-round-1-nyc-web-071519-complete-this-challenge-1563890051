@@ -10,6 +10,7 @@ end
 cust1 = Customer.new("Andrew", 'Santos')
 cust2 = Customer.new('Bruce', 'Jr')
 cust3 = Customer.new('Customer', 'Three')
+cust4 = Customer.new('Bruce', 'Jr')
 
 rest1 = Restaurant.new("Wendy's")
 rest2 = Restaurant.new("Arby's")

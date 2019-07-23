@@ -36,4 +36,23 @@ class Customer
     }.uniq
   end
 
+
+  def self.find_by_name(name)
+    all.find{|customer|
+      customer.full_name == name
+    }
+  end
+
+  def self.find_all_by_first_name (name)
+    all.select{|customer|
+      customer.first_name == name
+    }
+  end
+
+  def self.all_names
+    all.map{|customer|
+      customer.full_name
+    }
+  end
+
 end
