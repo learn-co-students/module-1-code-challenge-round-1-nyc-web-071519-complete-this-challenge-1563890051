@@ -16,4 +16,16 @@ class Restaurant
 
   # Instance methods
 
+  def customers
+    all_instances = Review.all.select do |cust_instance|
+      cust_instance.customer
+    end
+    cust_array = all_instances.map do |cust_instance|
+      cust_instance.customer.full_name
+    end
+    cust_array.uniq
+  end 
+
+  
+
 end

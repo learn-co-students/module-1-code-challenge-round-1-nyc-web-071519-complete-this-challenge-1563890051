@@ -33,14 +33,19 @@ class Customer
   end
 
   def restaurants
+    # get all instances
     all_instances = Review.all.select do |rest_instance|
       rest_instance.customer == self
     end
-    all_instances.map do |rest_instance|
+    rest_array = all_instances.map do |rest_instance|
       # return an array of names of restaurants
       # that a customer has reviewed.
+      # rest_instance.restaurant returns restairants with IDs
       rest_instance.restaurant.name
     end
+    # get rid of duplicates if they exist (customer can leave several reviewes
+    # for the same restaurant)
+    rest_array.uniq
   end
 
 end

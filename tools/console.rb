@@ -20,9 +20,10 @@ ukr = Restaurant.new("Taras Bulba")
 # REVIEWS
 rev1 = Review.new(alice, pizza, 3, "Pizza is so-so")
 rev2 = Review.new(tool, sushi, 5, "The best ever")
-rev1 = Review.new(tool, ukr, 5, "Just like in the motherland")
-rev1 = Review.new(jack, pizza, 4, "I like!")
-rev1 = Review.new(jack, ukr, 2, "Blah")
+rev3 = Review.new(tool, ukr, 5, "Just like in the motherland")
+rev4 = Review.new(jack, pizza, 4, "I like!")
+rev5 = Review.new(jack, ukr, 2, "Blah")
+rev6 = Review.new(jack, ukr, 4, "I changed my mind. It's good!")
 
 
 
