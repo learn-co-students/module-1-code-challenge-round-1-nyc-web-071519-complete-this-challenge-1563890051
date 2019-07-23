@@ -68,9 +68,9 @@ We've provided you with a console that you can use to test your code. To enter a
   - should return an **array** of all of the customer full names -->
 
 #### Build out the following method on the `Restaurant` class
-
+<!-- 
 - `Restaurant.find_by_name(name)`
-  - given a string of restaurant name, returns the first restaurant that matches
+  - given a string of restaurant name, returns the first restaurant that matches -->
 
 #### Build out the following methods on the `Review` class
 

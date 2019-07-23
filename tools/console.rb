@@ -20,9 +20,9 @@ review1 = Review.new(rest1, cust1, 4, "This is pretty good")
 review2 = Review.new(rest1, cust2, 3, "This is good")
 review3 = Review.new(rest2, cust1, 2, "This is bad")
 review4 = Review.new(rest2, cust2, 5, "This is great")
-review5 = Review.new(rest2, cust3, 1, "Barf")
+review5 = Review.new(rest2, cust3, -1, "Barf")
 review6 = Review.new(rest3, cust1, 5, "This is very good")
-review6 = Review.new(rest3, cust1, 5, "This is very good again!")
+review6 = Review.new(rest3, cust1, 6, "This is very good again!")
 
 
 
