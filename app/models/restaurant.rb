@@ -46,6 +46,8 @@ class Restaurant
   end
 
   def find_by_name(name)
+    name = @name.find
+    return name
   end
 
 

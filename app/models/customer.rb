@@ -18,13 +18,14 @@ class Customer
   end
 
   def add_review(rest_inst, raing, content)
-    #first 
+    #takes in a restaurant INSTANCE (i.e rest1), a rating, and the content
+    #adds a NEW customer which would be `self` as it is an instance method
     Customer.new(self, rest_inst, rating, content)
   end
 
   def num_reviews
     Review.all.select do |reviews|
-    reviews.restaurant == self
+    reviews.restaurant == self #make sure enumerables definied
     end.map
   end
 
@@ -35,7 +36,7 @@ class Customer
   end
 
   def find_by_name(name)
-    name = full_name.find
+    name = full_name.find #.find returns first in array
     return name
   end
 
@@ -45,6 +46,6 @@ class Customer
   end
 
   def all_names
-    @@all.map
+    @@all.map #map auto returns array
   end
 end
