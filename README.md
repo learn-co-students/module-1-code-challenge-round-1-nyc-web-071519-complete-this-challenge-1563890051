@@ -47,10 +47,10 @@ We've provided you with a console that you can use to test your code. To enter a
 
 #### Restaurant
 
-- `Restaurant#customers`
-  - Returns a **unique** list of all customers who have reviewed a particular restaurant.
-- `Restaurant#reviews`
-  - returns an array of all reviews for that restaurant
+<!-- - `Restaurant#customers`
+  - Returns a **unique** list of all customers who have reviewed a particular restaurant. -->
+<!-- - `Restaurant#reviews`
+  - returns an array of all reviews for that restaurant -->
 - `Restaurant#average_star_rating`
   - returns the average star rating for a restaurant based on its reviews
 - `Restaurant#longest_review`

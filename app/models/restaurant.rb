@@ -26,6 +26,23 @@ class Restaurant
     cust_array.uniq
   end 
 
-  
+  def reviews
+    all_instances = Review.all.select do |rev_instance|
+      rev_instance.restaurant == self
+    end
+    # get content
+    all_instances.map do |rev_instance|
+      rev_instance.content
+    end
+  end
+
+  def average_star_rating
+    all_instances = Review.all.select do |rev_instance|
+      rev_instance.restaurant == self
+    end
+    # get just rating
+    # calculate average
+  end
+
 
 end
