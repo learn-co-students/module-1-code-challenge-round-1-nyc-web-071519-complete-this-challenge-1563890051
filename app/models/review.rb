@@ -32,7 +32,11 @@ class Review
 
 
       def content
-       Review.all.
+       Review.all.select do |review_instance|
+        review_instance == self
+       end
+    
+       
         
           
       end
