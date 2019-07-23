@@ -44,8 +44,8 @@ class Customer
 
       #given a string of a **full name**, returns the **first customer** whose full name matches
       def self.find_by_name(name)
-        Customer.all.find do |name|
-        name.customer == name
+        Customer.all.find do |full_name|
+        full_name.customer == name
       end
     end
    end
