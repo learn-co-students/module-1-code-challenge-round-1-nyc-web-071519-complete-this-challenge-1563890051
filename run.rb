@@ -11,16 +11,16 @@ rest1 = Restaurant.new("Italian Place")
 rest2 = Restaurant.new("Chinese Place")
 rest3 = Restaurant.new("Mexican Place")
 
-cust1.add_review(rest1, "Good! Really really Good!", 5)
-cust1.add_review(rest2, "Listor hates Chinese", 1)
-cust1.add_review(rest3, "Listor dislikes Mexican", 2)
+r1 = cust1.add_review(rest1, "Good! Really really Good!", 5)
+r2 = cust1.add_review(rest2, "Listor hates Chinese", 1)
+r3 = cust1.add_review(rest3, "Listor dislikes Mexican", 2)
 
-cust2.add_review(rest1, "Eh...", 3)
-cust2.add_review(rest2, "Smith hates Chinese so much holy moly this is so bad!", 1)
-cust2.add_review(rest3, "Smith kinda enjoys Mexican", 3)
+r4 = cust2.add_review(rest1, "Eh...", 3)
+r5 = cust2.add_review(rest2, "Smith hates Chinese so much holy moly this is so bad!", 1)
+r6 = cust2.add_review(rest3, "Smith kinda enjoys Mexican", 3)
 
-cust3.add_review(rest1, "Bad!", 2)
-cust3.add_review(rest2, "Ian loves Chinese!", 5)
-cust3.add_review(rest3, "Ian also loves Mexican", 2)
+r7 = cust3.add_review(rest1, "Bad!", 2)
+r8 = cust3.add_review(rest2, "Ian loves Chinese!", 5)
+r9 = cust3.add_review(rest3, "Ian also loves Mexican", 2)
 
 binding.pry
