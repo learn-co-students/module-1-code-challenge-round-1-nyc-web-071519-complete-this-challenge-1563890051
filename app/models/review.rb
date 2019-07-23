@@ -1,3 +1,6 @@
+#link class
+
+
 class Review
 
     attr_accessor :restaurant, :content, :rating, :customer
@@ -21,6 +24,16 @@ class Review
 
       def self.all
         @@all
+          
+      end
+
+
+
+
+
+      def content
+       Review.all.
+        
           
       end
 

@@ -23,4 +23,33 @@ class Customer
 
 
 
+
+  def add_review(restaurant, content, rating)
+    Review.new(restaurant, content, rating, self)
+    
+  end
+
+
+  def num_reviews
+    Review.all.select do |review_instance|
+      review_instance.customer == self
+    end.count
+    
+  end
+
+
+def restaurants
+
+  Review.all.select do |review_instance|
+    review_instance.customer == self
+  end.map do |ri|
+    ri.restaurant
+  end
+
+
+end
+
+
+
+
 end
