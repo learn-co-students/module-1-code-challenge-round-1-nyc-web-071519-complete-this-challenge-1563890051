@@ -84,3 +84,4 @@ We've provided you with a console that you can use to test your code. To enter a
   - returns the star rating for a restaurant. This should be an integer from 1-5
 - `Review#content`
   - returns the review content, as a string, for a particular review
+
